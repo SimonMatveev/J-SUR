@@ -176,7 +176,6 @@
 
 
 .menu {
-
     background-color: #121212;
     height: 100vh;
     min-width: 62.5%;
@@ -382,6 +381,8 @@
     position: relative;
     overflow: hidden;
     height: 100vh;
+    filter: brightness(100%);
+    transition: filter 0.5s ease-in-out;
 
 
     &__circle {
