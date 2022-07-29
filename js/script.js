@@ -15,12 +15,15 @@ let firstScreen = document.querySelector(".first-screen");
 
 if (burger) {
 	burger.onclick = function () {
-		if (menu) {
-			menu.classList.toggle("header__menu--active");
-			burger.classList.toggle("header__burger--active");
+		if (menu.classList.contains("header__menu--active")) {
+			fullpage_api.setAllowScrolling(true, 'down, up');
+			firstScreen.style.filter = 'brightness(100%)';
+		} else {
 			fullpage_api.setAllowScrolling(false, 'down, up');
 			firstScreen.style.filter = 'brightness(50%)';
 		}
+		menu.classList.toggle("header__menu--active");
+		burger.classList.toggle("header__burger--active");
 	}
 }
 
