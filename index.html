@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-SUR</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/fullpage.js/dist/fullpage.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__burger"></div>
+
+            <a href="" class="header__logo logo">J-SUR</a>
+
+            <button class="header__search-button">Поиск</button>
+            <form action="get" class="header__search-form">
+                <input class="header__search-form-input" type="text">
+            </form>
+
+            <a href="" class="header__shop-button">Купить</a>
+
+            <nav class="header__menu menu">
+                <p class="menu__logo">J-SUR</p>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Мероприятия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Онлайн-библиотека</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Галерея</a>
+                    </li>
+                </ul>
+                <div class="menu__social">
+                    <a href="" class="menu__social-link">Facebook</a>
+                    <a href="" class="menu__social-link">Instagram</a>
+                    <a href="" class="menu__social-link">Youtube</a>
+                    <a href="" class="menu__social-link">Twitter</a>
+                </div>
+                <div class="menu__text">
+                    <p class="menu__text-adress">Москва, м. Арбатская</p>
+                    <a href="tel:89999999" class="menu__text-phone">+7 (999) 999-99-99</a>
+                    <p class="menu__text-time">Ежедневно, 12:00-24:00</p>
+                    <p class="menu__text-extra">Кассы закрываются за час до окончания работы</p>
+                    <a href="" class="menu__text-info">Юридическая информация</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main" id="fullpage">
+        <section class="main__first-screen first-screen section" id="first-screen">
+            <div class="first-screen__circle-wrapper">
+                <div class="first-screen__circle"></div>
+            </div>
+            <div class="container first-screen__container">
+                <div class="first-screen__advertisment">
+                    <img src="./img/first-screen/state=diary-side.png" alt="" class="first-screen__prev-img">
+                    <img src="./img/first-screen/state=paprika-main.png" alt="" class="first-screen__current-img">
+                    <img src="./img/first-screen/state=ultra-side.png" alt="" class="first-screen__next-img">
+                    <div class="first-screen__text">
+                        <p class="first-screen__dates-wrapper"><time class="first-screen__dates"
+                                datetime="2022-07-01">01.07.2022</time>-<time class="first-screen__dates"
+                                datetime="2022-08-01">01.08.2022</time>
+                        </p>
+                        <a href="" class="first-screen__title">ПАРАД БЕЗУМИЯ СНОВ И РЕАЛЬНОСТИ</a>
+                        <p class="first-screen__description"><span></span>Онлайн-кинопоказ главного фильма Сатоси
+                            Кона<span></span></p>
+                    </div>
+                </div>
+                <div class="first-screen__advertisment">
+                    <img src="./img/first-screen/state=paprika-side.png" alt="" class="first-screen__prev-img">
+                    <img src="./img/first-screen/state=ultra-main.png" alt="" class="first-screen__current-img">
+                    <img src="./img/first-screen/state=diary-side.png" alt="" class="first-screen__next-img">
+                    <div class="first-screen__text">
+                        <p class="first-screen__dates-wrapper"><time class="first-screen__dates"
+                                datetime="2022-07-01">01.07.2022</time>-<time class="first-screen__dates"
+                                datetime="2022-08-01">01.08.2022</time>
+                        </p>
+                        <a href="" class="first-screen__title">ЧЕМ ВДОХНОВЛЯЛСЯ КУНИО КАТО</a>
+                        <p class="first-screen__description">Онлайн-лекция о творческом пути великого японского
+                            мечтателя</p>
+                    </div>
+                </div>
+                <div class="first-screen__advertisment">
+                    <img src="./img/first-screen/state=ultra-side.png" alt="" class="first-screen__prev-img">
+                    <img src="./img/first-screen/state=diary-main.png" alt="" class="first-screen__current-img">
+                    <img src="./img/first-screen/state=paprika-side.png" alt="" class="first-screen__next-img">
+                    <div class="first-screen__text">
+                        <p class="first-screen__dates-wrapper"><time class="first-screen__dates"
+                                datetime="2022-07-01">01.07.2022</time>-<time class="first-screen__dates"
+                                datetime="2022-08-01">01.08.2022</time>
+                        </p>
+                        <a href="" class="first-screen__title">ПО ТУ СТОРОНУ СОЗНАНИЯ</a>
+                        <p class="first-screen__description">Выставка работ Кэйити Коикэ в Москве</p>
+                    </div>
+                </div>
+                <div class="first-screen__arrows-container">
+                    <div class="first-screen__arrows">
+                        <div class="first-screen__button-prev"></div>
+                        <div class="first-screen__button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__events events section" id="events">
+            <div class="container events__container">
+                <h2 class="events__title">Мероприятия</h2>
+                <a href="" class="events__to-archive">перейти в архив</a>
+                <div class="events__card card">
+                    <img src="" alt="" class="card__img">
+                    <span class="card__time"></span>
+                    <span class="card__price"></span>
+                    <p class="card__dates-wrapper">
+                        <time class="card__dates" datetime="2022-07-01">01.07.2022</time>-<time class="card__dates"
+                            datetime="2022-08-01">01.08.2022</time>, ежедневно
+                    </p>
+                    <h3 class="card__title">ПАРАД БЕЗУМИЯ СНОВ И РЕАЛЬНОСТИ</h3>
+                    <p class="card__description">Онлайн-кинопоказ главного фильма Сатоси Кона - «Паприка» с
+                        комментария...
+                    </p>
+                </div>
+
+                <div class="events__card card">
+                    <img src="" alt="" class="card__img">
+                    <span class="card__time"></span>
+                    <span class="card__price"></span>
+                    <p class="card__dates-wrapper">
+                        <time class="card__dates" datetime="2022-07-01">01.07.2022</time>-<time class="card__dates"
+                            datetime="2022-08-01">01.08.2022</time>, ежедневно
+                    </p>
+                    <h3 class="card__title">ЧЕМ ВДОХНОВЛЯЛСЯ КУНИО КАТО</h3>
+                    <p class="card__description">Онлайн-лекция о творческом пути великого японского мечтателя к
+                        Оскару...
+                    </p>
+                </div>
+        </section>
+        <section class="main__events events section" id="events">
+            <div class="container events__container">
+                <div class="events__card card">
+                    <img src="" alt="" class="card__img">
+                    <span class="card__time"></span>
+                    <span class="card__price"></span>
+                    <p class="card__dates-wrapper">
+                        <time class="card__dates" datetime="2022-07-01">01.07.2022</time>-<time class="card__dates"
+                            datetime="2022-08-01">01.08.2022</time>, ср-пт
+                    </p>
+                    <h3 class="card__title">ВОЛШЕБНЫЕ МИРЫ СИГЭРУ ТАМУРЫ</h3>
+                    <p class="card__description">Оффлайн-кинопоказ работ «Фрагменты Фантасмагории» и «Стеклянный океан»
+                        с...
+                    </p>
+                </div>
+
+                <div class="events__card card">
+                    <img src="" alt="" class="card__img">
+                    <span class="card__time"></span>
+                    <span class="card__price"></span>
+                    <p class="card__dates-wrapper">
+                        <time class="card__dates" datetime="2022-07-01">01.07.2022</time>-<time class="card__dates"
+                            datetime="2022-08-01">01.08.2022</time>, ср-вс
+                    </p>
+                    <h3 class="card__title">ПО ТУ СТОРОНУ СОЗНАНИЯ</h3>
+                    <p class="card__description">Выставка работ Кэйити Коикэ в нашем музее в Москве</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+
+
+    <script src="./node_modules/fullpage.js/dist/fullpage.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/ibg.js"></script>
+</body>
+
+</html>
