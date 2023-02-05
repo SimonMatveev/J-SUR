@@ -529,7 +529,7 @@
         }
 
         @media (max-width: 870.98px) {
-            font-size: 44px;
+            font-size: 41px;
         }
 
         @media (max-width: 575.98px) {
@@ -597,30 +597,151 @@
             background-image: url("../img/first-screen/arrows/state=hovered-on-black-1.svg");
         }
     }
+
+    &__scroll-down {
+        position: absolute;
+        width: 26px;
+        height: 24px;
+        background: url("../img/first-screen/arrows/down.svg");
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+
+        &:hover {
+            background-image: url("../img/first-screen/arrows/down-hover-black.svg");
+        }
+
+        @media (max-width: 575.98px) {
+            display: none;
+        }
+    }
 }
 
 .events {
+    background: white;
+    color: #121212;
 
-    &__title {}
 
-    &__to-archive {}
+    &__container {
+        max-width: 1406px;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        padding-top: 96px;
+
+        @media (max-width: 575.98px) {
+            padding-top: 72px;
+        }
+    }
+
+    &__title-container {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 286px;
+        margin-right: 143px;
+        padding: 72px 0;
+    }
+
+    &__title {
+        font-family: 'Angry';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 1.12;
+    }
+
+    &__to-archive {
+        position: relative;
+        font-family: 'Suisse Intl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.6;
+
+        &::after {
+            content: '';
+            width: 32px;
+            height: 32px;
+            background: url("../img/events/arrows/state=default-black.svg") no-repeat center;
+            position: absolute;
+            top: 0;
+            right: -44px;
+            padding-left: 12px;
+            display: block;
+        }
+
+        &:hover {
+            color: #BC012E;
+
+            &::after {
+                background-image: url("../img/events/arrows/state=hovered-on-white.svg");
+            }
+        }
+    }
+
+    &__card-container {
+        display: flex;
+    }
 
     &__card {}
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 550px;
+    padding: 20px;
 
-    &__img {}
+    &__img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__time,
+    &__price {
+        display: block;
+        padding: 8px 20px;
+        background: rgba(18, 18, 18, 0.72);
+        font-family: 'Suisse Intl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.6;
+        color: white;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        border-radius: 4px;
+    }
 
     &__time {}
 
-    &__price {}
+    &__price {
+        top: 100px;
+    }
 
-    &__dates-wrapper {}
+    &__dates-wrapper {
+        font-family: 'Suisse Intl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #655E61;
+        margin-bottom: 12px;
+    }
 
     &__dates {}
 
-    &__title {}
+    &__title {
+        font-family: 'Suisse Intl';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.22;
+        margin-bottom: 12px;
+    }
 
     &__description {}
 }
